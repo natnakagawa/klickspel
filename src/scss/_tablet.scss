@@ -1,0 +1,348 @@
+body {
+	background-color: #ffdab8;
+	position:relative;
+	font-family: 'Nunito', sans-serif;
+}
+
+label{
+	font-size: 1.5em;
+	padding-bottom: 10px;
+	display: block;
+}
+
+#finnished{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index:5;
+	top:0;
+	background-color: #ffffff;
+	opacity: 0.8;
+	display: none;
+}
+
+#finnishedPancakes{
+	position: absolute;
+	z-index: 8;
+    height: 50px;
+    opacity: 0;
+    top: 500px;
+    left: 400px;
+    margin: auto;
+}
+
+#goodJob{
+	display: none;
+	position: absolute;
+	z-index: 8;
+    top: 60px;
+    margin: auto;
+    font-size: 4em;
+    width: 100%;
+    text-align: center;
+}
+
+#wrapper {
+	background-image: url(../img/bg.png);
+	background-repeat: no-repeat;
+	background-size: 1000px;
+	width: 1000px;
+	height: 695px;
+	position: relative;
+	margin: 0px auto;
+	border: 20px solid white;
+}
+
+#timer{
+	background-image: url(../img/timer.png);
+	background-repeat: no-repeat;
+	background-size: 150px;
+	height: 150px;
+	width: 150px;
+	text-align: center;
+	margin: 10px;
+	display: none;
+
+	#timer_text{
+		font-size: 1.5em;
+		margin: 0px;
+		padding-top: 38px;
+	}
+}
+
+#recipe_list{
+	display: none;
+	background-image: url(../img/recipe.png);
+	background-repeat: no-repeat;
+	background-size: 150px; 
+	padding: 20px;
+	width: 120px;
+	margin: 10px;
+	display:none;
+
+	#recipe{
+		img{
+			width: 100px;
+		}
+	}
+
+	ul{
+		margin: 0px;
+		margin-top: 50px;
+		padding: 0px;
+		width: 100px;
+		li {
+			list-style: none;
+			margin: 0px;
+			text-align: center;
+		img {
+			height: 80px;
+		}
+	}
+	}
+}
+
+
+.ball {
+	width: 50px;
+	position: absolute;
+	top: 60px;
+    left: 270px;
+    z-index: 3;
+}
+.banana {
+	width: 75px;
+	position: absolute;
+	top: 455px;
+    left: 270px;
+    z-index: 3;
+}
+
+.cactus {
+	width: 60px;
+	position: absolute;
+	top: 255px;
+    left: 850px;
+    z-index: 3;
+}
+.candy {
+	width: 70px;
+	position: absolute;
+	top: 300px;
+    left: 190px;
+    z-index: 3;
+}
+.carrot {
+	width: 110px;
+	position: absolute;
+	top: 460px;
+    left: 155px;
+    z-index: 3;
+}
+
+.duck {
+	width: 60px;
+	position: absolute;
+	top: 380px;
+    left: 270px;
+    z-index: 3;
+}
+.egg {
+	width: 85px;
+	position: absolute;
+	top: 365px;
+    left: 170px;
+    z-index: 3;
+}
+.flour {
+	width: 70px;
+	position: absolute;
+	top: 130px;
+    left: 270px;
+    z-index: 3;
+}
+.juice {
+	width: 38px;
+	position: absolute;
+	top: 250px;
+    left: 920px;
+    z-index: 3;
+}
+.milk {
+	width: 50px;
+	position: absolute;
+	top: 370px;
+    left: 890px;
+    z-index: 3;
+}
+.pepper {
+	width: 32px;
+	position: absolute;
+	top: 160px;
+    left: 500px;
+    z-index: 3;
+}
+.salt {
+	width: 32px;
+	position: absolute;
+	top: 160px;
+    left: 450px;
+    z-index: 3;
+}
+#face{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 387px;
+    left: 610px;
+	z-index: 1;
+
+	img{
+		width: 90px;
+	}
+}
+p.go {
+	font-size: 8em;
+	font-family: 'Chango', cursive;
+	bottom: 200px;
+    left: 300px;
+    position: absolute;
+	display: none;
+	z-index: 2;
+}
+#arrowDown {
+	width: 70px;
+	position: absolute;
+	top: 340px;
+    left: 420px;
+    z-index: 1;
+}
+.kastrull {
+	height: 140px;
+    width: 150px;
+    position: absolute;
+    top: 500px;
+    left: 380px;
+}
+.star {
+	z-index: 1;
+	position: absolute;
+	bottom: 200px;
+    left: 400px;
+    width: 100px;
+    display: none;
+}
+.instruction {
+	width: 100%;
+	height: 100%;
+	background-color: transparentize(#000, 0.25);
+	position: relative;
+	z-index: 10;
+
+	.monster {
+		position: absolute;
+		bottom: -5px;
+		margin-left: 150px;
+
+		img{
+			width: 350px;
+			bottom: -1px;	
+		}
+	}
+
+	.bubble{
+		background-image: url(../img/bubble.png);
+		background-repeat: no-repeat;
+		height: 350px;
+		width: 400px;
+		position: absolute;
+		margin-left: 450px;
+		top: 50px;
+	}
+
+	.intro_text {
+		box-sizing: border-box;
+		padding: 10%;
+		margin: 0 auto;
+		text-align: center;
+		z-index: 12;
+	}
+
+	button {
+		padding: 1%;
+		font-size: 1em;
+		cursor: pointer;
+		position: relative;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+	}
+}
+.draggableItem {
+	cursor: grab;
+}
+.done {
+	opacity: 0.3;
+}
+#result {
+	background-image: url(../img/ranking.png);
+	background-repeat: no-repeat;
+	width: 700px;
+	height: 700px;
+	position: relative;
+	margin: 0px auto;
+	display: none;
+	.recipeImg {
+		margin: 0 auto;
+	    width: 202px;
+	    padding-top: 50px;
+	}
+	p {
+		text-align: center;
+		font-size: 1.56em;
+		margin: 0;
+		font-weight: bold;
+	}
+}
+.playAgain {
+	width: 173px;
+    margin: 0 auto;
+    margin-top: 15px;
+	img {
+		position: absolute;
+		width: 25%;
+	}
+	p {
+		text-align: center;
+	    margin: 0;
+	    position: relative;
+	    padding-top: 5%;
+	}
+	&:hover {
+		cursor: pointer;
+	}
+}
+#ranking {
+	margin: 0 auto;
+	width: 250px;
+    padding: 0;
+    font-size: 1.56em;
+	img {
+		margin-right: 10px;
+	}
+	td.highscore {
+		text-align: right;
+	}
+}
+#playerScore {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	p {
+		font-size: 1.85em;
+		color: rgb(46,105,72);
+	}
+}
+.ieNotSupported {
+	width: 100%;
+	display: none;
+}
